@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.29)
+cmake_minimum_required(VERSION 3.22)
 
 set(PROJ_TYPE EXECUTABLE) # EXECUTABLE or LIBRARY
 set(PROJ_LIB_TYPE STATIC) # If LIBRARY (STATIC, SHARED or MODULE)
