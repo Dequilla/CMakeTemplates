@@ -64,3 +64,11 @@ elseif(${PROJ_TYPE} MATCHES "LIBRARY")
 else()
     message(FATAL_ERROR "ERROR - ${PROJ_NAME}: PROJ_TYPE in CMakeLists.txt wrongly set. Supported types are EXECUTABLE or LIBRARY.")
 endif()
+
+target_include_directories(${PROJ_NAME} PUBLIC ${INC_DIR})
+
+if(${CMAKE_BUILD_TYPE} STREQUAL Debug)
+    target_compile_definitions(${PROJ_NAME} PRIVATE _DEBUG)
+else()
+    target_compile_definitions(${PROJ_NAME} PRIVATE _RELEASE)
+endif()
