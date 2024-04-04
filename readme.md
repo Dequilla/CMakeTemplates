@@ -10,7 +10,7 @@ cd ~/develop/
 ```
 
 ## Windows - Initialize project
-```batch
+```bat
 chdir C:\develop\
 
 set PROJECT_NAME=YourProjectName && git clone git@github.com:Dequilla/CMakeTemplates.git %PROJECT_NAME% && del /s /q ".\%PROJECT_NAME%\.git"
